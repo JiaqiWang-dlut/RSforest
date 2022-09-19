@@ -53,7 +53,7 @@ public static void main(String args[])throws Exception{
 				average_acc += acc;
 				System.out.println("acc: " + acc);
 				long five_fold_endTime = System.currentTimeMillis(); 
-				System.out.println("running time：" + (five_fold_endTime - five_fold_startTime) + "ms"); 
+				System.out.println("running time:" + (five_fold_endTime - five_fold_startTime) + "ms"); 
 	     }
 	        System.out.print("cv_average_acc: ");//5折的平均
 			System.out.println(average_acc/fold);
@@ -62,12 +62,12 @@ public static void main(String args[])throws Exception{
 			long endTime=System.currentTimeMillis(); //获取结束时间
 			double time = endTime - startTime;//一次五折的时间
 			aver_time += time;
-			System.out.println("cv_average_time： "+(endTime-startTime)+"ms");
+			System.out.println("cv_average_time: "+(endTime-startTime)+"ms");
 			average_acc = 0;
         }      
         System.out.println("average acc of cv_average_acc: ");
 		System.out.println(sum/5);//5 means run 5-fold cross-vaildation 5 times
-		System.out.println("average time of five 5-fold cross-validation： "+(aver_time/5)+"ms");//五次五折/5的时间
+		System.out.println("average time of five 5-fold cross-validation: "+(aver_time/5)+"ms");//五次五折/5的时间
 	}
 
 }
