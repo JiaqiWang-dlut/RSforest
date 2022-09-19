@@ -11,3 +11,4 @@ Following are the steps to run the code -
   - Code needs 2 inputs from the user: 
     - Training Dataset Path (ActivityTrain dataset is provided)
     - Testing Dataset Path (ActivityTest dataset is provided)
+five_fold_experiment.java is used for 5-fold cross-validation.
